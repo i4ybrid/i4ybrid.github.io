@@ -264,6 +264,14 @@
         .app-card:nth-child(2) { animation-delay: 0.2s; }
         .app-card:nth-child(3) { animation-delay: 0.3s; }
         .app-card:nth-child(4) { animation-delay: 0.4s; }
+        .app-card:nth-child(5) { animation-delay: 0.5s; }
+
+        .app-card.disabled {
+            opacity: 0.4;
+            pointer-events: none;
+            cursor: not-allowed;
+            filter: grayscale(1);
+        }
     </style>
 </head>
 <body>
@@ -297,11 +305,6 @@
                     <p>Projects I've built and maintain</p>
                 </div>
                 <div class="app-grid">
-                    <a href="https://plan.eric-hu.com" target="_blank" rel="noopener" class="app-card">
-                        <div class="app-icon">✈️</div>
-                        <h3>TripPlanner (Alpha)</h3>
-                        <p>The ultimate co-pilot for group travel. Turn chaotic group chats into confirmed itineraries with democratic voting, automated milestone tracking, and instant bill splitting.</p>
-                    </a>
                     <a href="/vibe-split/" class="app-card">
                         <div class="app-icon">💸</div>
                         <h3>Vibe Split</h3>
@@ -311,6 +314,16 @@
                         <div class="app-icon">📊</div>
                         <h3>eBay Calculator</h3>
                         <p>Calculate eBay profits against costs. Searches through Thunderbird database to find orders and calculate your actual profit.</p>
+                    </a>
+                    <a href="https://dance-clip.com" target="_blank" rel="noopener" class="app-card">
+                        <div class="app-icon">💃</div>
+                        <h3>DanceClip</h3>
+                        <p>A dance practice tool to learn dance and record video (future state) to post online.</p>
+                    </a>
+                    <a href="https://plan.eric-hu.com" target="_blank" rel="noopener" class="app-card disabled" aria-disabled="true">
+                        <div class="app-icon">✈️</div>
+                        <h3>TripPlanner (Alpha)</h3>
+                        <p>The ultimate co-pilot for group travel. Turn chaotic group chats into confirmed itineraries with democratic voting, automated milestone tracking, and instant bill splitting.</p>
                     </a>
                 </div>
             </div>
